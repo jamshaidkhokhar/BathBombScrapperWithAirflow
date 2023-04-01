@@ -1,0 +1,39 @@
+[2023-03-31T14:54:59.714+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_Scraping_Dag.save_to_spreadsheet manual__2023-03-31T09:50:03.323371+00:00 [queued]>
+[2023-03-31T14:54:59.724+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_Scraping_Dag.save_to_spreadsheet manual__2023-03-31T09:50:03.323371+00:00 [queued]>
+[2023-03-31T14:54:59.724+0500] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T14:54:59.724+0500] {taskinstance.py:1283} INFO - Starting attempt 1 of 2
+[2023-03-31T14:54:59.726+0500] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T14:54:59.745+0500] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): save_to_spreadsheet> on 2023-03-31 09:50:03.323371+00:00
+[2023-03-31T14:54:59.768+0500] {standard_task_runner.py:55} INFO - Started process 506 to run task
+[2023-03-31T14:54:59.778+0500] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'my_Scraping_Dag', 'save_to_spreadsheet', 'manual__2023-03-31T09:50:03.323371+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/AirFlow_Task.py', '--cfg-path', '/tmp/tmp0zf5rek0']
+[2023-03-31T14:54:59.780+0500] {standard_task_runner.py:83} INFO - Job 47: Subtask save_to_spreadsheet
+[2023-03-31T14:54:59.875+0500] {task_command.py:388} INFO - Running <TaskInstance: my_Scraping_Dag.save_to_spreadsheet manual__2023-03-31T09:50:03.323371+00:00 [running]> on host Jamshaid-PC.localdomain
+[2023-03-31T14:54:59.946+0500] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jamshaid.afzal@tmcltd.com
+AIRFLOW_CTX_DAG_OWNER=jamshaid
+AIRFLOW_CTX_DAG_ID=my_Scraping_Dag
+AIRFLOW_CTX_TASK_ID=save_to_spreadsheet
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-31T09:50:03.323371+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-31T09:50:03.323371+00:00
+[2023-03-31T14:54:59.949+0500] {taskinstance.py:1775} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.10/dist-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/mnt/c/dags/AirFlow_Task.py", line 47, in save_to_spreadsheet
+    gc = gspread.service_account(filename='gspreadcreds.json')
+  File "/home/jamshaid/.local/lib/python3.10/site-packages/gspread/auth.py", line 312, in service_account
+    creds = ServiceAccountCredentials.from_service_account_file(filename, scopes=scopes)
+  File "/home/jamshaid/.local/lib/python3.10/site-packages/google/oauth2/service_account.py", line 241, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+  File "/home/jamshaid/.local/lib/python3.10/site-packages/google/auth/_service_account_info.py", line 80, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'gspreadcreds.json'
+[2023-03-31T14:54:59.959+0500] {taskinstance.py:1321} INFO - Marking task as UP_FOR_RETRY. dag_id=my_Scraping_Dag, task_id=save_to_spreadsheet, execution_date=20230331T095003, start_date=20230331T095459, end_date=20230331T095459
+[2023-03-31T14:54:59.974+0500] {standard_task_runner.py:100} ERROR - Failed to execute job 47 for task save_to_spreadsheet ([Errno 2] No such file or directory: 'gspreadcreds.json'; 506)
+[2023-03-31T14:54:59.989+0500] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-03-31T14:55:00.036+0500] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

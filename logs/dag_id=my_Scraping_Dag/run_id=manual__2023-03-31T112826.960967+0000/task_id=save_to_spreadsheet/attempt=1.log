@@ -1,0 +1,25 @@
+[2023-03-31T16:29:57.820+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_Scraping_Dag.save_to_spreadsheet manual__2023-03-31T11:28:26.960967+00:00 [queued]>
+[2023-03-31T16:29:57.829+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_Scraping_Dag.save_to_spreadsheet manual__2023-03-31T11:28:26.960967+00:00 [queued]>
+[2023-03-31T16:29:57.829+0500] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T16:29:57.830+0500] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-31T16:29:57.830+0500] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T16:29:57.847+0500] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): save_to_spreadsheet> on 2023-03-31 11:28:26.960967+00:00
+[2023-03-31T16:29:57.863+0500] {standard_task_runner.py:55} INFO - Started process 2748 to run task
+[2023-03-31T16:29:57.872+0500] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'my_Scraping_Dag', 'save_to_spreadsheet', 'manual__2023-03-31T11:28:26.960967+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/AirFlow_Task.py', '--cfg-path', '/tmp/tmpysvrpk2g']
+[2023-03-31T16:29:57.874+0500] {standard_task_runner.py:83} INFO - Job 71: Subtask save_to_spreadsheet
+[2023-03-31T16:29:57.971+0500] {task_command.py:388} INFO - Running <TaskInstance: my_Scraping_Dag.save_to_spreadsheet manual__2023-03-31T11:28:26.960967+00:00 [running]> on host Jamshaid-PC.localdomain
+[2023-03-31T16:29:58.040+0500] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jamshaid.afzal@tmcltd.com
+AIRFLOW_CTX_DAG_OWNER=jamshaid
+AIRFLOW_CTX_DAG_ID=my_Scraping_Dag
+AIRFLOW_CTX_TASK_ID=save_to_spreadsheet
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-31T11:28:26.960967+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-31T11:28:26.960967+00:00
+[2023-03-31T16:29:58.043+0500] {logging_mixin.py:137} INFO - /home/jamshaid
+[2023-03-31T16:30:25.041+0500] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-31T16:30:25.069+0500] {taskinstance.py:1321} INFO - Marking task as SUCCESS. dag_id=my_Scraping_Dag, task_id=save_to_spreadsheet, execution_date=20230331T112826, start_date=20230331T112957, end_date=20230331T113025
+[2023-03-31T16:30:25.118+0500] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-31T16:30:25.140+0500] {taskinstance.py:2585} INFO - 1 downstream tasks scheduled from follow-on schedule check

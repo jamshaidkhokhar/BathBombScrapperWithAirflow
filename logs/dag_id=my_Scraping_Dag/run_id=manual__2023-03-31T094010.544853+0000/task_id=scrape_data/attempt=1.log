@@ -1,0 +1,24 @@
+[2023-03-31T14:40:16.961+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_Scraping_Dag.scrape_data manual__2023-03-31T09:40:10.544853+00:00 [queued]>
+[2023-03-31T14:40:16.972+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_Scraping_Dag.scrape_data manual__2023-03-31T09:40:10.544853+00:00 [queued]>
+[2023-03-31T14:40:16.972+0500] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T14:40:16.972+0500] {taskinstance.py:1283} INFO - Starting attempt 1 of 2
+[2023-03-31T14:40:16.974+0500] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T14:40:16.991+0500] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): scrape_data> on 2023-03-31 09:40:10.544853+00:00
+[2023-03-31T14:40:17.020+0500] {standard_task_runner.py:55} INFO - Started process 129 to run task
+[2023-03-31T14:40:17.041+0500] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'my_Scraping_Dag', 'scrape_data', 'manual__2023-03-31T09:40:10.544853+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/AirFlow_Task.py', '--cfg-path', '/tmp/tmpdfy_27zn']
+[2023-03-31T14:40:17.045+0500] {standard_task_runner.py:83} INFO - Job 44: Subtask scrape_data
+[2023-03-31T14:40:17.269+0500] {task_command.py:388} INFO - Running <TaskInstance: my_Scraping_Dag.scrape_data manual__2023-03-31T09:40:10.544853+00:00 [running]> on host Jamshaid-PC.localdomain
+[2023-03-31T14:40:17.424+0500] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jamshaid.afzal@tmcltd.com
+AIRFLOW_CTX_DAG_OWNER=jamshaid
+AIRFLOW_CTX_DAG_ID=my_Scraping_Dag
+AIRFLOW_CTX_TASK_ID=scrape_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-31T09:40:10.544853+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-31T09:40:10.544853+00:00
+[2023-03-31T14:40:22.379+0500] {python.py:177} INFO - Done. Returned value was: [['2 In 1 Bath Bomb', 'Question Block', '$18.00', ' 21.1 oz.'], ['Bath Bomb', 'Follow The White Rabbit', '$5.95', ' 3.5 oz.'], ['Bath Bomb', 'Ostara', '$9.95', ' 8.8 oz.'], ['Bath Bomb', 'Flamingo Egg', '$8.25', ' 6.8 oz.'], ['Bath Bomb Melt', 'Golden Egg', '$8.25', ' 3.1 oz.'], ['Epsom Salt Cube', 'Deep Sleep', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Lakes', '$8.50', ' 7 oz.'], ['Bath Bomb', 'Sex Bomb', '$9.00', ' 7 oz.'], ['Bath Bomb', 'Intergalactic', '$9.00', ' 7 oz.'], ['Bath Bomb', 'Butterball', '$6.50', ' 3.5 oz.'], ['Bath Bomb', 'Goddess', '$10.00', ' 6.3 oz.'], ['Epsom Salt Cube', 'Salt Water Soother', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Deep Sleep', '$10.00', ' 7 oz.'], ['Bath Bomb', 'Twilight', '$8.50', ' 7 oz.'], ['Bath Bomb', 'Avobath', '$7.50', ' 6.3 oz.'], ['Bath Bomb', "Toby's Magic Cow", '$7.50', ' 4.2 oz.'], ['Bath Bomb', 'Black Rose', '$10.00', ' 6.7 oz.'], ['Bath Bomb', 'Guardian Of The Forest', '$8.25', ' 5.9 oz.'], ['Bath Bomb', 'Peachy', '$8.50', ' 5.9 oz.'], ['Bath Bomb', 'Groovy Kind Of Love', '$8.50', ' 6.3 oz.'], ['Bath Bomb', 'Unicorn Poop', '$9.50', ' 5.3 oz.'], ['Bath Bomb', 'Wild Remedy', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Blackberry', '$7.50', ' 7 oz.'], ['Bath Bomb', "Dragon's Egg", '$8.50', ' 7 oz.'], ['Bath Bomb', 'Luxe', '$12.50', ' 6.3 oz.'], ['Bath Bomb', 'Sakura', '$7.50', ' 7 oz.'], ['Bath Bomb', 'Pink', '$9.50', ' 7 oz.'], ['Bath Bomb', 'Diamond Dust', '$13.50', ' 6.7 oz.'], ['Bath Bomb', 'Big Blue', '$7.50', ' 7 oz.'], ['Bath Bomb', 'Slow Down', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Time To Relax', '$12.50', ' 8.8 oz.'], ['Bath Bomb', 'Ickle Baby Bot', '$6.50', ' 3.3 oz.'], ['Bath Bomb', 'The Experimenter', '$10.00', ' 6.3 oz.'], ['Bath Bomb', 'Tisty Tosty', '$7.50', ' 3.5 oz.'], ['Bath Bomb', 'Atom Heart Mother', '$8.50', ' 7 oz.'], ['Bath Bomb', 'Broken Heart', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Jasmine', '$7.50', ' 4.2 oz.'], ['Bath Bomb', 'Tea Party', '$6.50', ' 2.9 oz.'], ['Bath Bomb', "Dexter's Dragon Egg", '$8.25', ' 7 oz.']]
+[2023-03-31T14:40:22.418+0500] {taskinstance.py:1321} INFO - Marking task as SUCCESS. dag_id=my_Scraping_Dag, task_id=scrape_data, execution_date=20230331T094010, start_date=20230331T094016, end_date=20230331T094022
+[2023-03-31T14:40:22.458+0500] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-31T14:40:22.495+0500] {taskinstance.py:2585} INFO - 1 downstream tasks scheduled from follow-on schedule check

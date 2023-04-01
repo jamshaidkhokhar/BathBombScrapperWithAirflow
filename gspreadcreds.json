@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bathbombscraper",
+  "private_key_id": "1e0a5660e3519db61ef03c2caec3659b01150307",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAzEIEElZizgno\nQ2IVnCb/nmr4rGniV/HPtfm5gfdsue57trHE/ypCBmId5VR+veR3PN3ttkH8HPw/\nNl+VJcIUAplhOEbvobD0q126f8yHgOVNqsA7ftStC11aK3ggS+w6dRrFjab+DzVw\nnLmKB3e5zwoNhFz4syzqeJ/yu05wVo1+7hPHjYhsyQb2WJrkgTGlnBNGtQUmslsZ\n7cHzSuwEE3KeQ5L+HqN53PsZ6TyH56McKEVoG6rwQdGt1WCkxIzFY0yHZ/uVr8Cy\nmgZeBH3ZeX4FNDxXf/cyt4lsIILXUxT/j8YSkyb1+pa0ZSxQ9CS+PdBfB1Bxw1pk\nfWAUZ6yHAgMBAAECggEADmwZMiHHCYwdLJ1BzJkKR8vrd5+6Kf7nLWERBcIFpsH/\n54xCnxhxak/87fyWRgbhfNP2TA56wCfQ7M+d9dPFwWZyX9XsZIela6AYGlfuDmLj\nhFxWFf1GXo1/lbuzuELFsJfLAWU3zUCJAFwQ+xTU7Xbh6yHwLICGxyFv4aIGW5vU\neECiVwRQBz6mP8ja+ruunLDZV902CpHRnLJ4eAR3zXWXKJLxAfXKWE76b72Gb8/m\nuGPA6pF2XZ96WFihdgPjGRODpMkI3u3OnKf7Kp4D4c0JYVnJbK8H3YVyyl9brMCk\nMf65z3nbPjToWF7gW+Hgg5To+zn8ZUJqF5bpQflmYQKBgQD4BFtmV8/w120Yl0Rb\n3S8CMC7cJAScLtyIQUnqoOQ7L5iyO+wmKxKjROMLxu13bs5Um+AwmxzPq/iPc+X9\nEZiqHxp0WRNal73Ao6Ga9Y+c3ZNYfUFXywzzdn6bPqGDauh9DRpLIp3O4Z7LTn3j\nCMh7Lpm2yIARse3lGb7WDTLAJwKBgQDHAOYkv1AxSO2sMC5/iiU7yfGjm5j+vdP8\niqyAK5SFi3vk5vh88FoTyJtGxz/acAz7QACUF5HNWJtzr6mVTh7nOHa06wMOSWQz\nDTCq+ocTspAOK1S8Q4dgjOwgjTRSu2FGesCvRo27SnmVE5iOJO/gu1oGarFaTsqN\nY/cth40MoQKBgQCnsoJ+k9eFOJSKsRVGrCqx5xR4Q15eoIz7EHJDVGCd6FPuB/hn\n4m3quZRvjSVZwTGAIhmXo/n6LYSWsr4KvJAmT3uaufQNKFbkX3/RAEMHxQZxKdg5\n3ZC3OiLnI5Uf//SNQYPK0/AyR3oQa9VQ4sp0CBFldvKphE6fvyW7JBdxtwKBgQC4\n11vtXAoXjR695g76hg1piHy6s8cbLqUdmIz7i/8rP9D3X5YFLpbsc1PPHTlxIszb\n/qnK5E2YR6o0fUBuHx7TM/4Gs5emCINaa/D9jzAyGpR1pMfTCoJPKvYUkjO8eLG0\n7kXVSBpTkax2zLnRpfttaXgIJ8fOEwtO40Bu+M4JoQKBgCdTMAFRPvqXPFTrZgfG\nt+1Szxh+sRJgXnAt7UlCmCh3bpfvr0kTyejamIfWSGtP269iEIp3uyNpd9Eu2sAI\n0ukJtTsjuWPuaSbE6CPoh1WYWLAsC0qzGg3kwj73F0sA+vJ78QFTENyFF8l7Xujv\nSgRi+gUn4x65uYqdCK8ROq/e\n-----END PRIVATE KEY-----\n",
+  "client_email": "bathbombscraper@bathbombscraper.iam.gserviceaccount.com",
+  "client_id": "114306482353464734973",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bathbombscraper%40bathbombscraper.iam.gserviceaccount.com"
+}

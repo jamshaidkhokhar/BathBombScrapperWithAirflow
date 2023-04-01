@@ -1,0 +1,64 @@
+[2023-03-31T16:41:11.600+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_Scraping_Dag.show_data manual__2023-03-31T11:40:27.997506+00:00 [queued]>
+[2023-03-31T16:41:11.615+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_Scraping_Dag.show_data manual__2023-03-31T11:40:27.997506+00:00 [queued]>
+[2023-03-31T16:41:11.615+0500] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T16:41:11.615+0500] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-31T16:41:11.617+0500] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T16:41:11.637+0500] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): show_data> on 2023-03-31 11:40:27.997506+00:00
+[2023-03-31T16:41:11.664+0500] {standard_task_runner.py:55} INFO - Started process 2959 to run task
+[2023-03-31T16:41:11.678+0500] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'my_Scraping_Dag', 'show_data', 'manual__2023-03-31T11:40:27.997506+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/AirFlow_Task.py', '--cfg-path', '/tmp/tmpyd0s4bb9']
+[2023-03-31T16:41:11.680+0500] {standard_task_runner.py:83} INFO - Job 72: Subtask show_data
+[2023-03-31T16:41:11.815+0500] {task_command.py:388} INFO - Running <TaskInstance: my_Scraping_Dag.show_data manual__2023-03-31T11:40:27.997506+00:00 [running]> on host Jamshaid-PC.localdomain
+[2023-03-31T16:41:11.905+0500] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jamshaid.afzal@tmcltd.com
+AIRFLOW_CTX_DAG_OWNER=jamshaid
+AIRFLOW_CTX_DAG_ID=my_Scraping_Dag
+AIRFLOW_CTX_TASK_ID=show_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-31T11:40:27.997506+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-31T11:40:27.997506+00:00
+[2023-03-31T16:41:15.110+0500] {logging_mixin.py:137} INFO - ['Category', 'Product_Title', 'Price', 'Weight']
+[2023-03-31T16:41:15.111+0500] {logging_mixin.py:137} INFO - ['2 In 1 Bath Bomb', 'Question Block', '$18.00', ' 21.1 oz.']
+[2023-03-31T16:41:15.111+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Follow The White Rabbit', '$5.95', ' 3.5 oz.']
+[2023-03-31T16:41:15.112+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Ostara', '$9.95', ' 8.8 oz.']
+[2023-03-31T16:41:15.112+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Flamingo Egg', '$8.25', ' 6.8 oz.']
+[2023-03-31T16:41:15.112+0500] {logging_mixin.py:137} INFO - ['Bath Bomb Melt', 'Golden Egg', '$8.25', ' 3.1 oz.']
+[2023-03-31T16:41:15.112+0500] {logging_mixin.py:137} INFO - ['Epsom Salt Cube', 'Deep Sleep', '$7.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.112+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Lakes', '$8.50', ' 7 oz.']
+[2023-03-31T16:41:15.112+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Sex Bomb', '$9.00', ' 7 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Intergalactic', '$9.00', ' 7 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Butterball', '$6.50', ' 3.5 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Goddess', '$10.00', ' 6.3 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Epsom Salt Cube', 'Salt Water Soother', '$7.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Deep Sleep', '$10.00', ' 7 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Twilight', '$8.50', ' 7 oz.']
+[2023-03-31T16:41:15.113+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Avobath', '$7.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.114+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', "Toby's Magic Cow", '$7.50', ' 4.2 oz.']
+[2023-03-31T16:41:15.114+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Black Rose', '$10.00', ' 6.7 oz.']
+[2023-03-31T16:41:15.114+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Guardian Of The Forest', '$8.25', ' 5.9 oz.']
+[2023-03-31T16:41:15.114+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Peachy', '$8.50', ' 5.9 oz.']
+[2023-03-31T16:41:15.114+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Groovy Kind Of Love', '$8.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.114+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Unicorn Poop', '$9.50', ' 5.3 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Wild Remedy', '$7.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Blackberry', '$7.50', ' 7 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', "Dragon's Egg", '$8.50', ' 7 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Luxe', '$12.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Sakura', '$7.50', ' 7 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Pink', '$9.50', ' 7 oz.']
+[2023-03-31T16:41:15.115+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Diamond Dust', '$13.50', ' 6.7 oz.']
+[2023-03-31T16:41:15.116+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Big Blue', '$7.50', ' 7 oz.']
+[2023-03-31T16:41:15.116+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Slow Down', '$7.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.116+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Time To Relax', '$12.50', ' 8.8 oz.']
+[2023-03-31T16:41:15.116+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Ickle Baby Bot', '$6.50', ' 3.3 oz.']
+[2023-03-31T16:41:15.116+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'The Experimenter', '$10.00', ' 6.3 oz.']
+[2023-03-31T16:41:15.116+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Tisty Tosty', '$7.50', ' 3.5 oz.']
+[2023-03-31T16:41:15.117+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Atom Heart Mother', '$8.50', ' 7 oz.']
+[2023-03-31T16:41:15.117+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Broken Heart', '$7.50', ' 6.3 oz.']
+[2023-03-31T16:41:15.117+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Jasmine', '$7.50', ' 4.2 oz.']
+[2023-03-31T16:41:15.117+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', 'Tea Party', '$6.50', ' 2.9 oz.']
+[2023-03-31T16:41:15.117+0500] {logging_mixin.py:137} INFO - ['Bath Bomb', "Dexter's Dragon Egg", '$8.25', ' 7 oz.']
+[2023-03-31T16:41:15.128+0500] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-31T16:41:15.137+0500] {taskinstance.py:1321} INFO - Marking task as SUCCESS. dag_id=my_Scraping_Dag, task_id=show_data, execution_date=20230331T114027, start_date=20230331T114111, end_date=20230331T114115
+[2023-03-31T16:41:15.162+0500] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-31T16:41:15.203+0500] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

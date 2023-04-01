@@ -1,0 +1,66 @@
+[2023-03-31T15:13:17.960+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_Scraping_Dag.scrape_data manual__2023-03-31T10:13:10.737386+00:00 [queued]>
+[2023-03-31T15:13:17.972+0500] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_Scraping_Dag.scrape_data manual__2023-03-31T10:13:10.737386+00:00 [queued]>
+[2023-03-31T15:13:17.973+0500] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T15:13:17.973+0500] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-03-31T15:13:17.974+0500] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-31T15:13:17.993+0500] {taskinstance.py:1303} INFO - Executing <Task(PythonOperator): scrape_data> on 2023-03-31 10:13:10.737386+00:00
+[2023-03-31T15:13:18.020+0500] {standard_task_runner.py:55} INFO - Started process 1261 to run task
+[2023-03-31T15:13:18.038+0500] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'my_Scraping_Dag', 'scrape_data', 'manual__2023-03-31T10:13:10.737386+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/AirFlow_Task.py', '--cfg-path', '/tmp/tmpfymg7g87']
+[2023-03-31T15:13:18.041+0500] {standard_task_runner.py:83} INFO - Job 55: Subtask scrape_data
+[2023-03-31T15:13:18.163+0500] {task_command.py:388} INFO - Running <TaskInstance: my_Scraping_Dag.scrape_data manual__2023-03-31T10:13:10.737386+00:00 [running]> on host Jamshaid-PC.localdomain
+[2023-03-31T15:13:18.268+0500] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jamshaid.afzal@tmcltd.com
+AIRFLOW_CTX_DAG_OWNER=jamshaid
+AIRFLOW_CTX_DAG_ID=my_Scraping_Dag
+AIRFLOW_CTX_TASK_ID=scrape_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-31T10:13:10.737386+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-31T10:13:10.737386+00:00
+[2023-03-31T15:13:23.184+0500] {python.py:177} INFO - Done. Returned value was: [['2 In 1 Bath Bomb', 'Question Block', '$18.00', ' 21.1 oz.'], ['Bath Bomb', 'Follow The White Rabbit', '$5.95', ' 3.5 oz.'], ['Bath Bomb', 'Ostara', '$9.95', ' 8.8 oz.'], ['Bath Bomb', 'Flamingo Egg', '$8.25', ' 6.8 oz.'], ['Bath Bomb Melt', 'Golden Egg', '$8.25', ' 3.1 oz.'], ['Epsom Salt Cube', 'Deep Sleep', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Lakes', '$8.50', ' 7 oz.'], ['Bath Bomb', 'Sex Bomb', '$9.00', ' 7 oz.'], ['Bath Bomb', 'Intergalactic', '$9.00', ' 7 oz.'], ['Bath Bomb', 'Butterball', '$6.50', ' 3.5 oz.'], ['Bath Bomb', 'Goddess', '$10.00', ' 6.3 oz.'], ['Epsom Salt Cube', 'Salt Water Soother', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Deep Sleep', '$10.00', ' 7 oz.'], ['Bath Bomb', 'Twilight', '$8.50', ' 7 oz.'], ['Bath Bomb', 'Avobath', '$7.50', ' 6.3 oz.'], ['Bath Bomb', "Toby's Magic Cow", '$7.50', ' 4.2 oz.'], ['Bath Bomb', 'Black Rose', '$10.00', ' 6.7 oz.'], ['Bath Bomb', 'Guardian Of The Forest', '$8.25', ' 5.9 oz.'], ['Bath Bomb', 'Peachy', '$8.50', ' 5.9 oz.'], ['Bath Bomb', 'Groovy Kind Of Love', '$8.50', ' 6.3 oz.'], ['Bath Bomb', 'Unicorn Poop', '$9.50', ' 5.3 oz.'], ['Bath Bomb', 'Wild Remedy', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Blackberry', '$7.50', ' 7 oz.'], ['Bath Bomb', "Dragon's Egg", '$8.50', ' 7 oz.'], ['Bath Bomb', 'Luxe', '$12.50', ' 6.3 oz.'], ['Bath Bomb', 'Sakura', '$7.50', ' 7 oz.'], ['Bath Bomb', 'Pink', '$9.50', ' 7 oz.'], ['Bath Bomb', 'Diamond Dust', '$13.50', ' 6.7 oz.'], ['Bath Bomb', 'Big Blue', '$7.50', ' 7 oz.'], ['Bath Bomb', 'Slow Down', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Time To Relax', '$12.50', ' 8.8 oz.'], ['Bath Bomb', 'Ickle Baby Bot', '$6.50', ' 3.3 oz.'], ['Bath Bomb', 'The Experimenter', '$10.00', ' 6.3 oz.'], ['Bath Bomb', 'Tisty Tosty', '$7.50', ' 3.5 oz.'], ['Bath Bomb', 'Atom Heart Mother', '$8.50', ' 7 oz.'], ['Bath Bomb', 'Broken Heart', '$7.50', ' 6.3 oz.'], ['Bath Bomb', 'Jasmine', '$7.50', ' 4.2 oz.'], ['Bath Bomb', 'Tea Party', '$6.50', ' 2.9 oz.'], ['Bath Bomb', "Dexter's Dragon Egg", '$8.25', ' 7 oz.']]
+[2023-03-31T15:13:23.286+0500] {taskinstance.py:1321} INFO - Marking task as SUCCESS. dag_id=my_Scraping_Dag, task_id=scrape_data, execution_date=20230331T101310, start_date=20230331T101317, end_date=20230331T101323
+[2023-03-31T15:13:23.358+0500] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-03-31T15:13:23.408+0500] {taskinstance.py:2591} INFO - Skipping mini scheduling run due to exception: SELECT dag_run.state AS dag_run_state, dag_run.id AS dag_run_id, dag_run.dag_id AS dag_run_dag_id, dag_run.queued_at AS dag_run_queued_at, dag_run.execution_date AS dag_run_execution_date, dag_run.start_date AS dag_run_start_date, dag_run.end_date AS dag_run_end_date, dag_run.run_id AS dag_run_run_id, dag_run.creating_job_id AS dag_run_creating_job_id, dag_run.external_trigger AS dag_run_external_trigger, dag_run.run_type AS dag_run_run_type, dag_run.conf AS dag_run_conf, dag_run.data_interval_start AS dag_run_data_interval_start, dag_run.data_interval_end AS dag_run_data_interval_end, dag_run.last_scheduling_decision AS dag_run_last_scheduling_decision, dag_run.dag_hash AS dag_run_dag_hash, dag_run.log_template_id AS dag_run_log_template_id, dag_run.updated_at AS dag_run_updated_at 
+FROM dag_run 
+WHERE dag_run.dag_id = ? AND dag_run.run_id = ?
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/taskinstance.py", line 2556, in schedule_downstream_tasks
+    ).one()
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/orm/query.py", line 2870, in one
+    return self._iter().one()
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.10/dist-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT dag_run.state AS dag_run_state, dag_run.id AS dag_run_id, dag_run.dag_id AS dag_run_dag_id, dag_run.queued_at AS dag_run_queued_at, dag_run.execution_date AS dag_run_execution_date, dag_run.start_date AS dag_run_start_date, dag_run.end_date AS dag_run_end_date, dag_run.run_id AS dag_run_run_id, dag_run.creating_job_id AS dag_run_creating_job_id, dag_run.external_trigger AS dag_run_external_trigger, dag_run.run_type AS dag_run_run_type, dag_run.conf AS dag_run_conf, dag_run.data_interval_start AS dag_run_data_interval_start, dag_run.data_interval_end AS dag_run_data_interval_end, dag_run.last_scheduling_decision AS dag_run_last_scheduling_decision, dag_run.dag_hash AS dag_run_dag_hash, dag_run.log_template_id AS dag_run_log_template_id, dag_run.updated_at AS dag_run_updated_at 
+FROM dag_run 
+WHERE dag_run.dag_id = ? AND dag_run.run_id = ?]
+[parameters: ('my_Scraping_Dag', 'manual__2023-03-31T10:13:10.737386+00:00')]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
